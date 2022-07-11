@@ -42,7 +42,7 @@ a {
     position: relative;
 }
 
-.lang-button:after {
+.underline {
     content: '';
     position: absolute;
     width: 100%;
@@ -56,7 +56,12 @@ a {
     transition: transform 0.25s ease-in-out;
 }
 
-.lang-button:hover:after {
+*:hover>.underline,
+.active>.underline {
     transform: scaleX(1);
     transform-origin: bottom center;
+}
+
+#details {
+    margin-top: 50px;
 }
