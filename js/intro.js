@@ -15,6 +15,8 @@ let animation = [
     { text: "Pechenux&nbsp;", delay: 200 },
     { text: "Pechenux|", delay: 200 },
     { text: "Pechenux&nbsp;", delay: 200 },
+    { text: "Pechenux|", delay: 200 },
+    { text: "Pechenux", delay: 300 },
     { text: "Pechenux", delay: 200 },
 ]
 
@@ -29,6 +31,9 @@ function updateIntro() {
     }
     else {
         header.classList.add('top')
+        setTimeout(() => {
+            document.getElementById('main').style.opacity = 1;
+        }, 500);
     }
 }
 

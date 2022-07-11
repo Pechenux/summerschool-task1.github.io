@@ -19,3 +19,44 @@ h1.top {
     top: 0;
     transform: translateX(-50%);
 }
+h2 {
+    margin: 0;
+    text-align: center;
+}
+
+a {
+    color: #949494;
+    text-decoration: none;
+}
+
+#main {
+    opacity: 0;
+    transition: 0.5s;
+    color: white;
+    margin-top: 60px;
+}
+
+.lang-button {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+
+.lang-button:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    border-radius: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-in-out;
+}
+
+.lang-button:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
