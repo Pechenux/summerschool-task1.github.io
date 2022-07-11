@@ -33,6 +33,7 @@ function updateIntro() {
         header.classList.add('top')
         setTimeout(() => {
             document.getElementById('main').style.opacity = 1;
+            initGlobe();
         }, 500);
     }
 }

@@ -3,6 +3,12 @@
 }
 
 body {
+    margin: 0;
+    background: black;
+    overflow: hidden;
+}
+
+body {
     background-color: black;
 }
 
@@ -19,9 +25,17 @@ h1.top {
     top: 0;
     transform: translateX(-50%);
 }
+
 h2 {
     margin: 0;
     text-align: center;
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5em;
 }
 
 a {
@@ -45,7 +59,6 @@ a {
 .underline {
     display: block;
     content: '';
-    
     width: 100%;
     transform: scaleX(0);
     height: 3px;
@@ -64,4 +77,40 @@ a {
 
 #details {
     margin-top: 50px;
+    opacity: 1;
+    z-index: 100;
+    transition: all 0.125s ease-in-out;
+}
+
+#details.gone {
+    opacity: 0;
+    z-index: -100;
+    transform: translateY(10vh);
+}
+
+.lang-panel {
+    opacity: 0;
+    transition: opacity 0.5s linear;
+    margin-top: 30px;
+    position: absolute;
+    width: 100%;
+    z-index: -100;
+    text-align: center;
+}
+
+.lang-panel.shown {
+    opacity: 1;
+    z-index: 100;
+    visibility: visible;
+}
+
+.lang-desc {
+    width: 40%;
+    margin: 10px auto;
+}
+
+canvas {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
 }

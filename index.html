@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Pechenux</title>
+
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/cookie.png">
+
+    <script type="text/javascript" src="js/encom-globe.min.js"></script>
+    <script type="text/javascript" src="js/grid.js"></script>
 </head>
 
 <body>
@@ -15,21 +21,53 @@
         <h2>I'm a 19 year-old developer</h2>
         <h2>
             who is familiar with 
-            <span class="lang-button" style="color: yellow;">
+            <span class="lang-button" style="color: yellow;" data-panel="python">
                 Python
                 <span class="underline" style="background-color: yellow;"></span>
-            </span>
-
-            <span class="lang-button" style="color: green;">
+            </span>,
+            <span class="lang-button" style="color: orange;" data-panel="htmlcss">
                 HTML/CSS/JS
-                <span class="underline" style="background-color: green;"></span>
+                <span class="underline" style="background-color: orange;"></span>
+            </span>
+            and
+            <span class="lang-button" style="color: #5ec9f8;" data-panel="others">
+                others
+                <span class="underline" style="background-color: #5ec9f8;"></span>
             </span>
         </h2>
-
+        <div id="python" class="lang-panel">
+            <h2>
+                <a style="color: #fff;" target="_blank" href="https://www.python.org/">Python
+                    <span class="underline" style="background-color: #fff;"></span>
+                </a>
+            </h2>
+            <h3 class="lang-desc">
+                Python is my first language that I learned for practical use. I use python for quick scripts, web servers using aiohttp and outher tasks. I've been using it for about 3 years now.
+            </h3>
+        </div>
+        <div id="htmlcss" class="lang-panel">
+            <h2>
+                <a style="color: #fff;" target="_blank" href="https://developer.mozilla.org/ru/docs/Learn">
+                    HTML/CSS/JS
+                    <span class="underline" style="background-color: #fff;"></span>
+                </a>
+            </h2>
+            <h3 class="lang-desc">
+                I have used HTML, CSS and JS for several projects, one of them is a website creates as a school project and talking about GPS that. Heck, I'm using this right now.
+            </h3>
+        </div>
+        <div id="others" class="lang-panel">
+            <h2>
+                Other skills
+            </h2>
+            <h3 class="lang-desc">
+                I have experience working with C#, C and C++, which I studied at university.
+            </h3>
+        </div>
         <div id="details">
             <h2>
                 Checkout my
-                <a rel="stylesheet" href="https://github.com/pechenux/">
+                <a target="_blank" href="https://github.com/pechenux/">
                     Github
                     <span class="underline" style="background-color: #949494;"></span>
                 </a>
@@ -40,7 +78,7 @@
             </h2>
             <h2>
                 Visit
-                <a rel="stylesheet" href="https://ottomated.net/">
+                <a target="_blank" href="https://ottomated.net/">
                     original site
                     <span class="underline" style="background-color: #949494;"></span>
                 </a>
@@ -48,7 +86,9 @@
         </div>
     </div>
 
-    <script src="js/intro.js"></script>
+    <script type="text/javascript" src="js/intro.js"></script>
+    <script type="text/javascript" src="js/langs.js"></script>
+    <script type="text/javascript" src="js/globe.js"></script>
 </body>
 
 </html>
